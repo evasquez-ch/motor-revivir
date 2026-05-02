@@ -123,17 +123,16 @@ export default function MotorApp() {
   }
 
   const renderPage = () => {
-    const props = { leads, setLeads, cots, setCots, peds, setPeds, regs, setRegs, clis, setClis, uid:usuario, aprobarCot }
     switch (page) {
-      case 'dashboard':    return <Dashboard    {...props} actOTs={actOTs}/>
-      case 'crm':          return <CRM          {...props}/>
-      case 'cotizaciones': return <PagCotizaciones {...props}/>
-      case 'clientes':     return <PagClientes  {...props}/>
-      case 'produccion':   return <PagProduccion {...props} actOTs={actOTs}/>
-      case 'registros':    return <PagRegistros {...props}/>
+      case 'dashboard':    return <Dashboard peds={actOTs} leads={leads} cots={cots}/>
+      case 'crm':          return <CRM leads={leads} setLeads={setLeads} uid={usuario}/>
+      case 'cotizaciones': return <PagCotizaciones cots={cots} setCots={setCots} leads={leads} clis={clis} setClis={setClis} peds={peds} setPeds={setPeds} uid={usuario}/>
+      case 'clientes':     return <PagClientes clis={clis} setClis={setClis} peds={peds} cots={cots} regs={regs} uid={usuario}/>
+      case 'produccion':   return <PagProduccion peds={peds} setPeds={setPeds} clis={clis} setRegs={setRegs} uid={usuario}/>
+      case 'registros':    return <PagRegistros regs={regs} clis={clis}/>
       case 'catalogo':     return <PagCatalogo/>
       case 'calculadora':  return <PagCalculadora/>
-      default:             return <Dashboard    {...props} actOTs={actOTs}/>
+      default:             return <Dashboard peds={actOTs} leads={leads} cots={cots}/>
     }
   }
 
