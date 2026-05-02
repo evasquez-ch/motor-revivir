@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #0F0F0F;
+  --s1: #171717;
+  --s2: #1F1F1F;
+  --s3: #252525;
+  --border: #2A2A2A;
+  --text: #EFEFEF;
+  --text2: #AAAAAA;
+  --muted: #606060;
+  --green: #5BAF3A;
+  --gl: rgba(91,175,58,.12);
+  --gs: rgba(91,175,58,.22);
+  --purple: #8B5CF6;
+  --pl: rgba(139,92,246,.12);
+  --red: #C0392B;
+  --rl: rgba(192,57,43,.12);
+  --amber: #D97706;
+  --al: rgba(217,119,6,.12);
+  --blue: #2B6CB0;
+  --bl: rgba(43,108,176,.12);
+  --teal: #0D9488;
+  --tl: rgba(13,148,136,.12);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Archivo', sans-serif;
+  min-height: 100vh;
+}
+
+button { cursor: pointer; font-family: 'Archivo', sans-serif; }
+input, select, textarea { font-family: 'Archivo', sans-serif; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--s2); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted); }
