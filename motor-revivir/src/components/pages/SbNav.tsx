@@ -305,7 +305,3 @@ export function SbNav({active,go,onClose,leads,peds,usuario,onLogout}) {
     </>
   );
 }
-
-/* ─── CONTABILIDAD VACÍA ─── */
-function Contabilidad() {
-  return (
