@@ -1,11 +1,12 @@
 'use client'
-// Produccion — componente de página
-// El código completo está en motor-revivir-v7.jsx (artifact)
-// Este archivo es un placeholder para el proyecto Next.js
-// Copia el contenido de la función Produccion desde el artifact aquí.
-export function Produccion(props: any) {
-  return <div style={{padding:32,color:'#fff',fontFamily:'Archivo,sans-serif'}}>
-    <h2 style={{fontSize:20,fontWeight:800,marginBottom:8}}>Produccion</h2>
-    <p style={{color:'#606060',fontSize:13}}>Copia el código de esta página desde motor-revivir-v7.jsx</p>
-  </div>
+// PagProduccion — placeholder para Next.js
+// El código completo está en el artifact motor-revivir-v7-fixed.jsx
+// Copia el contenido de la función correspondiente aquí para tener la app completa con Supabase
+export function PagProduccion(props: any) {
+  return (
+    <div style={{padding:32,color:'#fff',fontFamily:'Archivo,sans-serif'}}>
+      <h2 style={{fontSize:20,fontWeight:800,marginBottom:8}}>PagProduccion</h2>
+      <p style={{color:'#606060',fontSize:13}}>Placeholder — copia el código desde el artifact.</p>
+    </div>
+  )
 }
