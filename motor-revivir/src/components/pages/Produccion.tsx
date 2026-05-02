@@ -2,9 +2,6 @@
 import { useState, useRef } from "react";
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
 
-import { useState, useRef } from "react";
-import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
-
 /* ─── CONFIG ─── */
 const IVA = 0.19;
 const USUARIOS = {
@@ -490,7 +487,6 @@ function ModalPed({clis,onClose,onSave,uid}) {
     </div>
   );
 }
-
 
 export function PagProduccion({peds,setPeds,clis,setRegs,uid}) {
   const [ficha,setFicha]=useState(null);

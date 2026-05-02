@@ -2,9 +2,6 @@
 import { useState, useRef } from "react";
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
 
-import { useState, useRef } from "react";
-import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
-
 /* ─── CONFIG ─── */
 const IVA = 0.19;
 const USUARIOS = {
@@ -315,7 +312,6 @@ function ModalLead({lead,onClose,onSave,uid}) {
     </div>
   );
 }
-
 
 export function CRM({leads,setLeads,uid}) {
   const [modal,setModal]=useState(false);

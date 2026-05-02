@@ -2,9 +2,6 @@
 import { useState, useRef } from "react";
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
 
-import { useState, useRef } from "react";
-import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
-
 /* ─── CONFIG ─── */
 const IVA = 0.19;
 const USUARIOS = {
@@ -278,7 +275,6 @@ const progPed = p => {
 };
 
 /* ─── DnD ─── */
-
 export function PagRegistros({regs,clis}) {
   const [fCli,setFCli]=useState("todos");
   const cOpts=["todos",...[...new Set(regs.map(r=>r.empresa))]];

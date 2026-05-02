@@ -2,9 +2,6 @@
 import { useState, useRef } from "react";
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
 
-import { useState, useRef } from "react";
-import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
-
 /* ─── CONFIG ─── */
 const IVA = 0.19;
 const USUARIOS = {
@@ -278,8 +275,6 @@ const progPed = p => {
 };
 
 /* ─── DnD ─── */
-
-export { SbNav };
 export function SbNav({active,go,onClose,leads,peds,usuario,onLogout}) {
   const lN=leads.filter(l=>l.estado==="lead").length;
   const sinOT=peds.filter(p=>!p.arch&&!p.ot&&p.estado==="cotizacion").length;

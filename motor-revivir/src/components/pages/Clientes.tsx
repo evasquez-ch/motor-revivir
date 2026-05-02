@@ -2,9 +2,6 @@
 import { useState, useRef } from "react";
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
 
-import { useState, useRef } from "react";
-import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
-
 /* ─── CONFIG ─── */
 const IVA = 0.19;
 const USUARIOS = {
@@ -308,7 +305,6 @@ const chartD=[
   {mes:"Nov",ing:0,cos:0},{mes:"Dic",ing:0,cos:0},{mes:"Ene",ing:0,cos:0},
   {mes:"Feb",ing:0,cos:0},{mes:"Mar",ing:0,cos:0},{mes:"Abr",ing:0,cos:0},
 ];
-
 
 export function PagClientes({clis,setClis,peds,cots,regs,uid}) {
   const [sel,setSel]=useState(null);

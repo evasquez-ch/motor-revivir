@@ -2,9 +2,6 @@
 import { useState, useRef } from "react";
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
 
-import { useState, useRef } from "react";
-import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
-
 /* ─── CONFIG ─── */
 const IVA = 0.19;
 const USUARIOS = {
@@ -616,7 +613,6 @@ function ModalCot({onClose,onSave,leads,clis,uid}) {
     </div>
   );
 }
-
 
 export function PagCotizaciones({cots,setCots,leads,clis,setClis,peds,setPeds,uid}) {
   const [modal,setModal]=useState(false);

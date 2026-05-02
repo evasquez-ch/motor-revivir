@@ -2,9 +2,6 @@
 import { useState, useRef } from "react";
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
 
-import { useState, useRef } from "react";
-import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts";
-
 /* ─── CONFIG ─── */
 const IVA = 0.19;
 const USUARIOS = {
@@ -293,7 +290,7 @@ function useDnD(setEst) {
 /* ─── PDF INLINE ─── */
 
 /* ─── PDF OT ─── */
-function Login({onLogin}) {
+export function LoginPage({onLogin}) {
   return (
     <div className="lgp">
       <div className="lgc">
@@ -322,5 +319,3 @@ function Login({onLogin}) {
 }
 
 /* ─── MODALES ─── */
-
-export { Login as LoginPage };
